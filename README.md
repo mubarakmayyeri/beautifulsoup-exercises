@@ -30,7 +30,7 @@ python scraper.py
 ```
 Now you will be able too see the `title` of the webiste provided as input in your terminal.
 
-## Refrences
+## References
 1. Beautiful Soup Docs - https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 2. Geekforgeeks Tutorila - https://www.youtube.com/watch?v=O6nnVHPjcJU&ab_channel=GeeksforGeeks
 
