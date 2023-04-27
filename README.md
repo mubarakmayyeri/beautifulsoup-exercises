@@ -28,9 +28,10 @@ print(res.get_text())
 ```shell
 python scraper.py
 ```
-Now you will be able too see the `title` of the webiste provided as input in your terminal.
+Now give the website url as input and you will be able too see the `title` of the webiste in your terminal.
 
 ## References
 1. Beautiful Soup Docs - https://www.crummy.com/software/BeautifulSoup/bs4/doc/
-2. Geekforgeeks Tutorila - https://www.youtube.com/watch?v=O6nnVHPjcJU&ab_channel=GeeksforGeeks
+2. Geekforgeeks Tutorial - https://www.youtube.com/watch?v=O6nnVHPjcJU&ab_channel=GeeksforGeeks
+3. FreedCamp Tutorial - https://www.youtube.com/watch?v=XVv6mJpFOb0&t=1280s&ab_channel=freeCodeCamp.org
 
