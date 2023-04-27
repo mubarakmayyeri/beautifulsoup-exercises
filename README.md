@@ -5,7 +5,7 @@ Learning web scraping with Beautiful Soup Python Library
 1. Insatll necessary libraries
 
 ```shell
-pip install beautifulsoup4 requests
+pip install beautifulsoup4 requests lxml
 ```
 
 2. Create a python application for scraping
@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup
 url = input("Url of the website you want to scrape: ")
 
 req = requests.get(url)
-soup = BeautifulSoup(req.content, "html.parser")
+soup = BeautifulSoup(req.content, "lxml")
 
 res = soup.title    # For scraping the title of website
 
