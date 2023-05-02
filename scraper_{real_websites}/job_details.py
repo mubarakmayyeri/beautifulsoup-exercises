@@ -17,6 +17,6 @@ post_day = jobs.find('span', class_="sim-posted").text.split()[1]
 print(f'''
 Job Title: {job_name}
 Company: {company_name}
-skills: {skills}
+Required Skills: {skills}
 Posting Day: {post_day} ago
 ''')
