@@ -7,16 +7,20 @@ html_text = requests.get(URL).text
 
 soup = BeautifulSoup(html_text, 'lxml')
 
-jobs = soup.find('li', class_="clearfix job-bx wht-shd-bx")
-job_name = jobs.find('a').text
-company = jobs.find('h3', class_="joblist-comp-name").text.strip().split()[:2]
-company_name = ''.join(company)
-skills = jobs.find('span', class_="srp-skills").text.replace(" ", "").strip()
-post_day = jobs.find('span', class_="sim-posted").text.split()[1]
+jobs = soup.find_all('li', class_="clearfix job-bx wht-shd-bx")
+for job in jobs:
+    published_date = job.find('span', class_="sim-posted").text.strip()
+    
+    if published_date == "Posted few days ago":
+        job_name = job.find('a').text.strip()
+        company = job.find('h3', class_="joblist-comp-name").text.strip()
+        skills = job.find('span', class_="srp-skills").text.replace(" ", "").strip()
 
-print(f'''
+        print(f'''
 Job Title: {job_name}
-Company: {company_name}
+Company: {company}
 Required Skills: {skills}
-Posting Day: {post_day} ago
+-------------------------------
+
 ''')
+
